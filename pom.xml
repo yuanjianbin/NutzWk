@@ -28,16 +28,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <url>https://wizzer.cn</url>
+    <url>http://wizzer.cn</url>
     <description>java web development framework, base on nutz</description>
     <issueManagement>
         <system>Github Issue</system>
-        <url>https://github.com/Wizzercn/NutzWk/issues</url>
+        <url>http://github.com/Wizzercn/NutzWk/issues</url>
     </issueManagement>
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
-            <url>https://apache.org/licenses/LICENSE-2.0.txt</url>
+            <url>http://apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
     <developers>
@@ -45,7 +45,7 @@
             <id>wizzercn</id>
             <name>Wizzer</name>
             <email>wizzer.cn@gmail.com</email>
-            <url>https://wizzer.cn</url>
+            <url>http://wizzer.cn</url>
         </developer>
         <developer>
             <id>wendal</id>
@@ -148,6 +148,7 @@
             <plugin>
                 <groupId>org.nutz.boot</groupId>
                 <artifactId>nutzboot-maven-plugin</artifactId>
+              <!--  <version>2.3.0.v20190220</version>-->
                 <version>${nutzboot.version}</version>
             </plugin>
         </plugins>
@@ -155,14 +156,14 @@
     <repositories>
         <repository>
             <id>nutz</id>
-            <url>https://jfrog.nutz.cn/artifactory/libs-release</url>
+            <url>http://jfrog.nutz.cn/artifactory/libs-release</url>
         </repository>
         <repository>
             <id>nutz-snapshots</id>
-            <url>https://jfrog.nutz.cn/artifactory/snapshots</url>
+            <url>http://jfrog.nutz.cn/artifactory/snapshots</url>
             <snapshots>
                 <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
+              <!--  <updatePolicy>always</updatePolicy>-->
             </snapshots>
             <releases>
                 <enabled>false</enabled>
@@ -172,10 +173,10 @@
     <pluginRepositories>
         <pluginRepository>
             <id>nutz-snapshots</id>
-            <url>https://jfrog.nutz.cn/artifactory/snapshots</url>
+            <url>http://jfrog.nutz.cn/artifactory/snapshots</url>
             <snapshots>
                 <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
+               <!-- <updatePolicy>always</updatePolicy>-->
             </snapshots>
             <releases>
                 <enabled>false</enabled>
@@ -185,12 +186,12 @@
     <distributionManagement>
         <snapshotRepository>
             <id>nutzcn-snapshots</id>
-            <url>https://jfrog.nutz.cn/artifactory/snapshots/</url>
+            <url>http://jfrog.nutz.cn/artifactory/snapshots/</url>
         </snapshotRepository>
         <repository>
             <id>sonatype-release-staging</id>
             <name>Sonatype Nexus release repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+            <url>http://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
     </distributionManagement>
 
